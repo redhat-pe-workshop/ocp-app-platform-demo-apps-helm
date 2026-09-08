@@ -1,0 +1,26 @@
+apiVersion: v1
+entries:
+  app-deployer:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-09-08T08:55:16.028632367Z"
+    description: Generic application deployer for OpenShift
+    digest: 79ba86187a919da2824e3bfe08fdce6301f59628b0577631974471209900f816
+    name: app-deployer
+    type: application
+    urls:
+    - https://github.com/redhat-pe-workshop/ocp-app-platform-demo-apps-helm/releases/download/app-deployer-0.1.0/app-deployer-0.1.0.tgz
+    version: 0.1.0
+  build-deployer:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-09-08T08:55:16.23850408Z"
+    description: Generic secured build pipeline deployer for OpenShift (PE Workshop
+      fork)
+    digest: 467f877a54d16564df696aa4a3511d21c26155c87aa2a74d7b98d7e6ac114509
+    name: build-deployer
+    type: application
+    urls:
+    - https://github.com/redhat-pe-workshop/ocp-app-platform-demo-apps-helm/releases/download/build-deployer-0.2.0/build-deployer-0.2.0.tgz
+    version: 0.2.0
+generated: "2026-09-08T08:55:16.238506952Z"
