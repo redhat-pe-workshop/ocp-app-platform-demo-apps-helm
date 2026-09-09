@@ -3,4 +3,4 @@ name: build-deployer
 description: Generic secured build pipeline deployer for OpenShift (PE Workshop fork)
 type: application
 version: 0.2.2
-appVersion: "1.0.0"
+appVersion: "1.0.1"
