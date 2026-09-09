@@ -7,10 +7,12 @@ spec:
   params:
     - name: DEPLOYMENT
       type: string
+    - name: NAMESPACE
+      type: string
   steps:
     - name: rollout-restart
       image: image-registry.openshift-image-registry.svc:5000/openshift/cli:latest
       script: |
         #!/usr/bin/env bash
-        oc rollout restart deployment/$(params.DEPLOYMENT)
-        oc rollout status deployment/$(params.DEPLOYMENT) --timeout=300s
+        oc rollout restart deployment/$(params.DEPLOYMENT) -n $(params.NAMESPACE)
+        oc rollout status deployment/$(params.DEPLOYMENT) -n $(params.NAMESPACE) --timeout=300s

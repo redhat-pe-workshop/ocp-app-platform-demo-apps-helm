@@ -143,3 +143,5 @@ spec:
       params:
         - name: DEPLOYMENT
           value: {{ include "build-deployer.name" . }}
+        - name: NAMESPACE
+          value: {{ include "build-deployer.name" . }}-dev
