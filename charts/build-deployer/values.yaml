@@ -75,7 +75,7 @@ secrets:
     vaultKey: secrets/gitlab/token
   # GitLab webhook secret for EventListener verification
   gitlabWebhook:
-    vaultKey: ""
+    vaultKey: secrets/common/webhook-secret
   # Quay push credentials for buildah and Tekton Chains
   quayPush:
     vaultKey: secrets/quay/auth
