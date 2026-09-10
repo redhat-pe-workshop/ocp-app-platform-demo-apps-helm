@@ -25,6 +25,7 @@ spec:
       {{- if .Values.serviceAccount.create }}
       serviceAccountName: {{ include "app-deployer.name" . }}
       {{- end }}
+      terminationGracePeriodSeconds: {{ .Values.terminationGracePeriodSeconds }}
       containers:
         - name: {{ include "app-deployer.name" . }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
