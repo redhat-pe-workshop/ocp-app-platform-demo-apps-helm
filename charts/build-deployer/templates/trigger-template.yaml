@@ -14,6 +14,7 @@ spec:
         namespace: {{ include "build-deployer.namespace" . }}
         labels:
           backstage.io/kubernetes-id: {{ include "build-deployer.backstageId" . }}
+          app.kubernetes.io/name: {{ include "build-deployer.name" . }}
       spec:
         pipelineRef:
           name: {{ include "build-deployer.pipelineName" . }}
