@@ -28,6 +28,9 @@ Standard labels applied to all resources.
 app.kubernetes.io/instance: {{ .Release.Name }}
 app.kubernetes.io/version: {{ .Values.image.tag | quote }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
+{{- if .Values.runtime }}
+app.openshift.io/runtime: {{ .Values.runtime }}
+{{- end }}
 {{- with .Values.extraLabels }}
 {{ toYaml . }}
 {{- end }}
